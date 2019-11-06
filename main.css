@@ -4,7 +4,7 @@ body {
 
 * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
-.mySlides {display: none;}
+.mySlides { display: none;}
 img {vertical-align: middle;}
 
 /* Slideshow container */
@@ -12,10 +12,10 @@ img {vertical-align: middle;}
   max-width: 100%;
   position: relative;
   margin: auto;
-  border-left: 4px solid black;
-  border-right: 4px solid black;
-  border-top: 5px solid lightblue;
-  border-bottom: 5px solid lightblue;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
 }
 
 /* Caption text */
@@ -52,7 +52,7 @@ img {vertical-align: middle;}
 }
 
 .active {
-  background-color: rgb(179, 54, 179);
+  background-color: rgb(197, 238, 252);
 }
 
 /* Fading animation */
@@ -81,11 +81,12 @@ img {vertical-align: middle;}
     text-align: center;
     font-family: 'ZCOOL XiaoWei', serif;
     color: grey;
+    font-size: 28px;
 }
 .smalltitleedit {
     color:rgb(141, 106, 106);
     font-family: 'Liu Jian Mao Cao', cursive;
-    font-size: 16px;
+    font-size: 20px;
 }
 .cutoff {
     background-color:grey;
@@ -121,11 +122,29 @@ img {vertical-align: middle;}
   .text1 {
     color: white;
     font-size: 56px;
+    font-family: 'Lobster', cursive;
     position: absolute;
     top: 50%;
+    Width: 70%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+  }
+  a {
+    background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+      background-position: 0 100%;
+      background-repeat: repeat-x;
+      background-size: 3px 3px;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: 0 100%;
+    background-size: auto 6px;
+    background-repeat: repeat-x;
+    text-decoration: none;
   }
